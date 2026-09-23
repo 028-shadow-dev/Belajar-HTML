@@ -1,133 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Saya</title>
-  </head>
-  <body>
-    <!-- cara membuat judul mulai dari terbesar hingga terkecil -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Rakha</label>
+        <input type="text" placeholder="ISI NAMA">
 
-    <!-- cara membuat paragraf  -->
-    <p>ini adalah paragraf</p>
-
-    <!-- cara membuat text tebal dan miring -->
-    <strong>ini teks bold</strong>
-    <em>ini teks miring</em>
-
-    <!-- cara membuat baris baru menggunakan br (Break Line) -->
-    <p>
-      Jl. Merdeka No. 10 <br />
-      Bogor, Jawa Barat
-    </p>
-
-    <!-- cara membuat garis pembatas -->
-    <h2>Bagian 1</h2>
-    <hr>
-    <h2>Bagian 2</h2>
-    <hr>
-    <h2>Bagian 3</h2>
-
-    <!-- cara membuat link -->
-    <a href="about.html">ke halaman about</a>
-
-    <!-- cara membuat serta menampilkan gambar -->
-    <img src="gambar/600x600.svg" alt="ini adalah gambar 600x600" width="800"> <!-- menampilkan gambar melalui relative path -->
-    <!-- atau -->
-    <img src="https://placehold.co/600x600" alt="ini adalah gambar 600x600" width="800"> <!-- menampilkan gambar melalui absolute path -->
-
-
-    <!-- cara membuat table -->
-    <table border="1">
-      <!-- tr (table row) -->
-      <tr>
-        <!-- th (table head)  -->
-        <th>Nama</th>
-        <th>Nilai</th>
-      </tr>
-      <tr>
-        <!-- td (table data) -->
-        <td>deme</td>
-        <td>60</td>
-      </tr>
-    </table>
-
-
-    <!-- semantic html -->
-    <header>ini adalah header</header>
-    <nav>ini adalah nav</nav>
-    <main>ini adalah isi content</main>
-    <footer>ini adalah footer</footer>
-
-    <!-- cara membuat form (untuk mengirimkan sebuah nilai ke browser) -->
-    <form action="">
-      <!-- input type text contoh: budi -->
-      <div>
-        <label for="nama">Nama</label>
-        <input id="nama" type="text">
-      </div>
-
-      <!-- input type email contoh: nama@gmail.com -->
-      <div>
-        <label>email</label>
-        <input type="email">
-      </div>
-
-      <!-- input type password contoh: ****** -->
-      <div>
-        <label>password</label>
-        <input type="password">
-      </div>
-
-      <!-- input type date contoh: 10/10/2010 -->
-      <div>
-        <label>date</label>
-        <input type="date">
-      </div>
-      
-      <!-- input type number contoh: 123456789 -->
-      <div>
-        <label>number</label>
-        <input type="number">
-      </div>
-
-      <!-- input textarea contoh: text yang sangat panjang seperti alamat -->
-      <div>
-        <label>textarea</label>
-        <textarea rows="4"></textarea>
-      </div>
-
-      <!-- select option (menampilkan berbagai macam kategori dalam 1 input)-->
-      <div>
-        <label>kategori</label>
-        <select name="" id="">
-          <option value="SD" selected>SD</option>
-          <option value="SMP">SMP</option>
-          <option value="SMA">SMA</option>
+        <label for="kelas">Kelas</label>
+        <select>
+            <option>XII PPLG 1</option>
+            <option>XII PPLG 2</option>
+            <option>XII PPLG 3</option>
         </select>
-      </div>
+        
+        <label label for="kelas">JENIS KELAMIN</label>
+        <input type="radio" name="JENIS KELAMIN"> Pria
+        <input type="radio" name="JENIS KELAMIN"> Wanita
 
-      <!-- radio button (memilih salah satu kategori) -->
-      <div>
-        <label>jenis kelamin</label>
-        <input type="radio" name="jk" value="laki"> laki 
-        <input type="radio" name="jk" value="perempuan"> perempuan
-      </div>
+        <label label for="EKSTRAKULIKULER">EKSTRAKULIKULER</label>
+        <select>
+            <option>Web Programming</option>
+            <option>Desain Grafis</option>
+            <option>Robotika</option>
+            <option>Futsal</option>
+        </select>
 
-      <!-- checkbox (memilih beberapa kategori bersamaan) -->
-      <div>
-        <label>buah buahan</label>
-        <input type="checkbox">  apel
-        <input type="checkbox"> jeruk
-        <input type="checkbox"> semangka
-      </div>
+        <label for="NO TLP">NO TLP</label>
+        <input type="tel" placeholder="input nomer hp mu">
+
+        <label>alasan mengikuti EKSTRAKULIKULER</label>
+        <textarea rows="4">isi disini</textarea>
+
+        <label for="daftar">DAFTAR</label>
+        <button type="submit">submit</button>
+
+        <label for="RESET">RESET</label>
+        <button>reset</button>
     </form>
-
-  </body>
+    <table>Daftar Peserta Ekstrakurikuler
+        <th>Nomor</th>
+        <th>Nama Siswa</th>
+        <th>Kelas</th>
+        <th>Jenis Kelamin</th>
+        <th>Ekstrakurikuler</th>
+        <th>Nomor Telepon </th>
+        <tr>
+            <td>1</td>
+            <td>rakha</td>
+            <td>XI PPLG 1</td>
+            <td>PRIA</td>
+            <td>NO</td>
+            <td>08511718***</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>rakha</td>
+            <td>XI PPLG 1</td>
+            <td>PRIA</td>
+            <td>NO</td>
+            <td>08511718***</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>rakha</td>
+            <td>XI PPLG 1</td>
+            <td>PRIA</td>
+            <td>NO</td>
+            <td>08511718***</td>
+        </tr>
+    </table>
+</body>
 </html>
