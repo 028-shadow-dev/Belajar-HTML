@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Saya</title>
+  </head>
+  <body>
+    <!-- cara membuat judul mulai dari terbesar hingga terkecil -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6> 
+
+    <!-- cara membuat paragraf  -->
+    <p>ini adalah paragraf</p>
+
+    <!-- cara membuat text tebal dan miring -->
+    <strong>ini teks bold</strong>
+    <em>ini teks miring</em>
+
+    <!-- cara membuat baris baru menggunakan br (Break Line) -->
+    <p>
+      Jl. Merdeka No. 10 <br />
+      Bogor, Jawa Barat
+    </p>
+
+    <!-- cara membuat garis pembatas -->
+    <h2>Bagian 1</h2>
+    <hr>
+    <h2>Bagian 2</h2>
+    <hr>
+    <h2>Bagian 3</h2>
+
+    <!-- cara membuat link -->
+    <a href="about.html">ke halaman about</a>
+
+    <!-- cara membuat serta menampilkan gambar -->
+    <img src="gambar/600x600.svg" alt="ini adalah gambar 600x600" width="800"> <!-- menampilkan gambar melalui relative path -->
+    <!-- atau -->
+    <img src="https://placehold.co/600x600" alt="ini adalah gambar 600x600" width="800"> <!-- menampilkan gambar melalui absolute path -->
+
+
+    <!-- cara membuat table -->
+    <table border="1">
+      <!-- tr (table row) -->
+      <tr>
+        <!-- th (table head)  -->
+        <th>Nama</th>
+        <th>Nilai</th>
+      </tr>
+      <tr>
+        <!-- td (table data) -->
+        <td>deme</td>
+        <td>60</td>
+      </tr>
+    </table>
+
+
+    <!-- semantic html -->
+    <header>ini adalah header</header>
+    <nav>ini adalah nav</nav>
+    <main>ini adalah isi content</main>
+    <footer>ini adalah footer</footer>
+
+    <!-- cara membuat form (untuk mengirimkan sebuah nilai ke browser) -->
+    <form action="">
+      <!-- input type text contoh: budi -->
+      <div>
+        <label for="nama">Nama</label>
+        <input id="nama" type="text">
+      </div>
+
+      <!-- input type email contoh: nama@gmail.com -->
+      <div>
+        <label>email</label>
+        <input type="email">
+      </div>
+
+      <!-- input type password contoh: ****** -->
+      <div>
+        <label>password</label>
+        <input type="password">
+      </div>
+
+      <!-- input type date contoh: 10/10/2010 -->
+      <div>
+        <label>date</label>
+        <input type="date">
+      </div>
+      
+      <!-- input type number contoh: 123456789 -->
+      <div>
+        <label>number</label>
+        <input type="number">
+      </div>
+
+      <!-- input textarea contoh: text yang sangat panjang seperti alamat -->
+      <div>
+        <label>textarea</label>
+        <textarea rows="4"></textarea>
+      </div>
+
+      <!-- select option (menampilkan berbagai macam kategori dalam 1 input)-->
+      <div>
+        <label>kategori</label>
+        <select name="" id="">
+          <option value="SD" selected>SD</option>
+          <option value="SMP">SMP</option>
+          <option value="SMA">SMA</option>
+        </select>
+      </div>
+
+      <!-- radio button (memilih salah satu kategori) -->
+      <div>
+        <label>jenis kelamin</label>
+        <input type="radio" name="jk" value="laki"> laki 
+        <input type="radio" name="jk" value="perempuan"> perempuan
+      </div>
+
+      <!-- checkbox (memilih beberapa kategori bersamaan) -->
+      <div>
+        <label>buah buahan</label>
+        <input type="checkbox">  apel
+        <input type="checkbox"> jeruk
+        <input type="checkbox"> semangka
+      </div>
+    </form>
+
+  </body>
+</html>
